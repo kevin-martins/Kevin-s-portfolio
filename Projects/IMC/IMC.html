@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../variables.css">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC by Kevin</title>
+</head>
+<body>
+    <header>
+        <div class="headtitle">
+            <span>IMC<br>calculator</span>
+            <p class="def">Calcul de l'indice de masse corporelle</p>
+        </div>
+        <a href="../../Index.html/#projects" class="back">back</a> 
+    </header>
+    <div class="area">
+        <p class="value vstyle margin" id="VSize">cm</p>
+        <input type="range" min="80" max="210" value="145" class="slider pstyle" id="size">
+        <div class="progress" id="PSize"></div>
+    </div>
+    <div class="area">
+        <p class="value vstyle" id="VWeight">kg</p>
+        <input type="range" min="20" max="200" value="110" class="slider pstyle" id="weight">
+        <div class="progress" id="PWeight"></div>
+    </div>
+    <p class="value imc" id="VResult">52</p>
+    <div id="info">Obésité morbide</div>
+
+    <footer class="copyright">
+        <p>&copy;</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

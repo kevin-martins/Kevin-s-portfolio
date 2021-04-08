@@ -1,0 +1,59 @@
+/* #region HTML Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--MainBackgroundColor);
+}
+
+.headtitle {
+    text-align: center;
+    top: 50px;
+}
+
+span {
+    font-size: 8rem;
+    font-weight: bold;
+    background: var(--TitleColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.def {
+    color: var(--TextColor);
+    font-size: 1.2rem;
+}
+
+/* #endregion */
+
+/* #region Footer */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: var(--FooterBackgroundColor);
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.copyright p{
+    font-size: 1.1rem;
+    color: var(--TextColor);
+}
+
+.copyright p::after{
+    content: var(--CopyrightContent);
+}
+
+/* #endregion */

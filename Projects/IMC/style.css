@@ -1,0 +1,240 @@
+/* #region HTML Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: var(--MainBackgroundColor);
+}
+
+.headtitle {
+    text-align: center;
+    top: 50px;
+}
+
+span {
+    font-size: 8rem;
+    font-weight: bold;
+    background: var(--TitleColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.def {
+    color: var(--TextColor);
+    font-size: 1.2rem;
+}
+
+/* #endregion */
+
+/* #region Back to Main Page */
+
+.back {
+    font-size: 2rem;
+    color: var(--TextColor);
+    margin-left: 3%;
+    margin-top: 1%;
+    top: 30px;
+    position: relative;
+    text-decoration: none;
+}
+
+.back:hover {
+    animation: 5s flashing;
+}
+
+@keyframes flashing {
+    0%{
+        opacity: 0;
+    }
+    3%{
+        opacity: .7;
+    }
+    6%{
+        opacity: 0;
+    }
+    9%{
+        opacity: 1;
+    }
+    30%{
+        color: var(--HoverBack);
+    }
+}
+
+/* #endregion */
+
+/* #region Slider Selectors */
+
+.slider {
+    width: 60%;
+    height: 17px;
+    margin-left: 20%;
+    margin-top: 1%;
+    border: 3px solid var(--ProgressBarColor);
+    background-color: rgb(226, 226, 226);
+    border-radius: 15px;
+    opacity: 0.7;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.margin {
+    margin-top: 3%;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 50px;
+    background: var(--CursorColor);
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.pstyle {
+    opacity: .7;
+}
+
+/* Hidden bar on the Slider */
+
+.progress {
+    height: 17px;
+    width: 60%;
+    border-radius: 3px;
+    background-color: var(--ProgressBarColor);
+    position: relative;
+    top: -21px;
+    margin-left: 20%;
+}
+
+/* #endregion */
+
+/* #region Values */
+
+.value {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+/* For Sliders */
+.vstyle {
+    font-size: 3em;
+    color: var(--CursorColor);
+}
+
+/* Result Calculation */
+.imc {
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1%;
+    color: var(--CalculationTextResult);
+    cursor: pointer;
+}
+/* For the Body-Type Text */
+#info {
+    font-size: 3em;
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    text-shadow: 5px -5px black;
+}
+
+/* #endregion */
+
+/* #region Footer */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: var(--FooterBackgroundColor);
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.copyright p{
+    font-size: 1.1rem;
+    color: var(--TextColor);
+}
+
+.copyright p::after{
+    content: var(--CopyrightContent);
+}
+
+/* #endregion */
+
+/* #region Resize */
+
+/* #region Resize to 768px */
+
+@media screen and (max-width: 768px) {
+    span {
+        font-size: 8rem;
+    }
+
+    .back {
+        font-size: 1.5rem;
+    }
+
+    .margin {
+        margin-top: 5%;
+    }
+
+    #info {
+        font-size: 2rem;
+    }
+}
+
+/* #endregion */
+
+/* #region Resize to 580px */
+
+@media screen and (max-width: 580px) {
+    span {
+        font-size: 6rem;
+    }
+
+    .margin {
+        margin-top: 20%;
+    }
+
+    #info {
+        font-size: 1.5rem;
+    }
+}
+
+/* #endregion */
+
+/* #region Resize to 480px */
+
+@media screen and (max-width: 480px) {
+    span {
+        font-size: 5rem;
+    }
+    
+    #info {
+        font-size: 1.5rem;
+    }
+}
+
+/* #endregion */
+
+/* #endregion */

@@ -1,0 +1,127 @@
+/* #region HTML Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--MainBackgroundColor);
+}
+
+div.headTitle {
+    text-align: center;
+}
+
+header span {
+    font-size: 8rem;
+    font-weight: bold;
+    background: var(--TitleColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+/* #endregion */
+
+/* #region Back to Main Page */
+
+.back {
+    font-size: 2rem;
+    color: var(--TextColor);
+    margin-left: 3%;
+    margin-top: 1%;
+    top: 30px;
+    position: relative;
+    text-decoration: none;
+}
+
+.back:hover {
+    animation: 5s flashing;
+}
+
+@keyframes flashing {
+    0%{
+        opacity: 0;
+    }
+    3%{
+        opacity: .7;
+    }
+    6%{
+        opacity: 0;
+    }
+    9%{
+        opacity: 1;
+    }
+    30%{
+        color: var(--HoverBack);
+    }
+}
+
+/* #endregion */
+
+/* #region Encryption button */
+div#cryptionType {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    width: 150px;
+    height: 40px;
+    border: 2px orange solid;
+    border-radius: 5px;
+    background: white;
+    font-size: 2em;
+    overflow: auto;
+}
+
+div:hover {
+    animation: circle cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes circle {
+
+}
+
+/* #endButton */
+
+main {
+    position: relative;
+    width: 100%;
+    min-width: 500px;
+    max-width: 1000px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+section {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: white;
+    border: 3px solid black;
+    border-radius: 8px;
+}
+
+/* #region Footer */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background: var(--FooterBackgroundColor);
+    padding: 1rem 0;
+    bottom: 0;
+}
+
+.copyright p{
+    font-size: 1.1rem;
+    color: var(--TextColor);
+}
+
+.copyright p::after{
+    content: var(--CopyrightContent);
+}
+
+/* #endregion */

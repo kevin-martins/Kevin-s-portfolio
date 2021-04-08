@@ -1,0 +1,41 @@
+/* #region Variables */
+
+:root {
+    --MainBackgroundColor: linear-gradient(to bottom, #22395d, #3e66a8);
+    --TitleColor: linear-gradient(to top, #ff0000, #ff8800);
+    --NavColor: linear-gradient(to top, #ffe838, #fd57bf);
+    --TextColor: #eee;
+    --Box-TimelineBorderColor: #ffe838;
+    --Box-TimelineInsideColor: #fd57bf;
+    --IconColor: #ffe838;
+    --HoverProjects: rgb(228, 245, 76);
+    --HoverSocialMedia: #b44cdd;
+    --FooterBackgroundColor: linear-gradient(to top, #22395d, #3e66a8);
+    --CopyrightContent: "2021 Martins Kevin";
+
+    /* #region Drag&Drop Project */
+    --HoverBack: rgb(228, 245, 76);
+    --DropBackgroundColor: white;
+    --BoxShadowSize: 5px;
+    --BoxBackgroundColor: orange;
+    --BoxColorShadow: rgb(255, 100, 0);
+    --ValidBoxShadowSize: 8px;
+    --ValidBoxBackgroundColor: greenyellow;
+    --ValidBoxColorShadow: rgb(17, 133, 13);
+    /* #endregion */
+
+    /* #region IMC Project */
+    --ProgressBarColor: orange;
+    --CursorColor: #4c9baf;
+    --CalculationTextResult: orange;
+    /* #endregion */
+
+    /* #region Clock Project */
+    --HourPositionColor: orange;
+    --HourNeedleColor: green;
+    --MinNeedleColor: yellow;
+    --SecNeedleColor: red;
+    /* #endregion */
+}
+
+/* #endregion */
